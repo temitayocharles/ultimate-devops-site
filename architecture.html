@@ -2,91 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Architecture — Ultimate DevOps Container</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Architecture • Ultimate DevOps</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
     body {
-      background-color: #0f172a;
-      color: #f1f5f9;
-      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.7;
+      margin: 0;
     }
-    h1, h2 {
-      color: #7dd3fc;
+    nav {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 220px;
+      height: 100%;
+      background-color: #161b22;
+      padding: 2rem 1rem;
+      overflow-y: auto;
     }
-    .section {
-      padding: 3rem 1.5rem;
+    nav a {
+      display: block;
+      margin: 0.75rem 0;
+      color: #58a6ff;
+      text-decoration: none;
     }
-    .card {
-      background-color: #1e293b;
-      border: none;
-      border-left: 5px solid #38bdf8;
-      box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+    nav a:hover {
+      text-shadow: 0 0 10px #58a6ff;
     }
-    .diagram {
-      margin-top: 2rem;
-      padding: 1rem;
-      background: #1e293b;
-      border-radius: 10px;
-      text-align: center;
+    .main {
+      margin-left: 240px;
+      padding: 2rem;
     }
-    .diagram img {
-      max-width: 100%;
-      border: 2px solid #334155;
-      border-radius: 10px;
+    h1 {
+      color: #58a6ff;
+      text-shadow: 0 0 8px #58a6ff;
     }
-    a {
-      color: #7dd3fc;
-    }
-    a:hover {
-      color: #bae6fd;
+    img {
+      width: 100%;
+      margin-top: 1rem;
+      border-radius: 8px;
     }
   </style>
 </head>
 <body>
-  <div class="container section">
-    <h1>Container Architecture</h1>
+  <nav>
+    <a href="index.html">🏠 Home</a>
+    <a href="about.html">About</a>
+    <a href="features.html">Features</a>
+    <a href="ci.html">CI/CD</a>
+    <a href="security.html">Security</a>
+    <a href="use-cases.html">Use Cases</a>
+    <a href="docs.html">Docs</a>
+  </nav>
+  <div class="main">
+    <h1>Architecture Overview</h1>
     <p>
-      The Ultimate DevOps Container is designed to be lightweight, modular, and instantly functional. Its multi-stage Dockerfile compiles your full DevOps workspace into a single portable unit. Below is a breakdown of its internal architecture and the tools it brings together.
+      The Ultimate DevOps Container is powered by a multi-layer architecture that balances flexibility, performance, and security.
     </p>
-
-    <div class="card p-3 mb-4">
-      <h2>🔧 Core Tools</h2>
-      <ul>
-        <li>Docker CLI + Docker Compose</li>
-        <li>Terraform, Helm, AWS CLI, kubectl</li>
-        <li>Vault CLI, Git, glab, curl, jq, yq</li>
-        <li>Code-server (VS Code in browser)</li>
-        <li>Checkov, Trivy, SOPS, Stern</li>
-      </ul>
-    </div>
-
-    <div class="card p-3 mb-4">
-      <h2>📊 Monitoring Stack</h2>
-      <ul>
-        <li>Grafana (auto-provisioned dashboards)</li>
-        <li>Prometheus (auto-scrape config)</li>
-        <li>Alertmanager (Slack/Mattermost ready)</li>
-      </ul>
-    </div>
-
-    <div class="card p-3 mb-4">
-      <h2>🔒 Security Features</h2>
-      <ul>
-        <li>mkcert TLS by default for *.local domains</li>
-        <li>Zsh hardened shell + Powerlevel10k</li>
-        <li>Read-only reverse proxy volume</li>
-        <li>Healthchecks + Socket Protection</li>
-      </ul>
-    </div>
-
-    <div class="diagram">
-      <h2>📐 Architecture Diagram</h2>
-      <img src="images/architecture.png" alt="Ultimate DevOps Container Architecture Diagram" />
-    </div>
-
-    <p class="mt-4">
-      ➡️ <a href="about.html">Next: About the Project</a>
+    <ul>
+      <li><strong>Base Layer:</strong> Hardened Debian slim with Zsh, Docker, and essential CLI tools</li>
+      <li><strong>DevOps Layer:</strong> Terraform, Helm, Kubectl, Trivy, Checkov, AWS CLI</li>
+      <li><strong>Platform Layer:</strong> Prometheus, Grafana, Vault, Code-Server</li>
+      <li><strong>UX Layer:</strong> Oh My Zsh + Powerlevel10k, preloaded dashboards, reverse proxy with TLS</li>
+    </ul>
+    <img src="images/container-architecture.png" alt="DevOps Container Architecture" />
+    <p>
+      The architecture enables modular builds, isolated services, volume mounting for persistence, and auto-provisioned secrets handling.
     </p>
   </div>
 </body>
