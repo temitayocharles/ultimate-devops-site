@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Getting Started - Ultimate DevOps</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>body { display: flex; flex-direction: column; min-height: 100vh; } main { padding: 20px; flex: 1; }</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Ultimate DevOps</a>
+    <button class="btn btn-outline-light ms-auto" onclick="toggleTheme()">🌙</button>
+  </div>
+</nav>
+<div class="d-flex">
+  <div class="bg-light p-3" style="width: 250px; height: 100vh;">
+    <h5>Navigation</h5>
+    <ul class="nav flex-column">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="architecture.html">Architecture</a></li>
+      <li class="nav-item"><a class="nav-link" href="use-cases.html">Use Cases</a></li>
+      <li class="nav-item"><a class="nav-link" href="problem-solved.html">Problem Solved</a></li>
+      <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
+      <li class="nav-item"><a class="nav-link active" href="getting-started.html">Getting Started</a></li>
+      <li class="nav-item"><a class="nav-link" href="components.html">Components</a></li>
+      <li class="nav-item"><a class="nav-link" href="security.html">Security</a></li>
+      <li class="nav-item"><a class="nav-link" href="ci-cd.html">CI/CD</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <main class="flex-grow-1">
+    <h1>Getting Started</h1>
+    <p>To run locally:</p>
+    <pre><code>docker run -it --rm \
+  --name devops-charlie \
+  -p 443:443 \
+  -v /Volumes/256-B:/mnt/backup \
+  temitayocharles/ultimate-devops</code></pre>
+    <p>You’ll get access to:</p>
+    <ul>
+      <li>Browser IDE via <a href="https://code.local">https://code.local</a></li>
+      <li>Grafana dashboards at <a href="https://grafana.local">https://grafana.local</a></li>
+      <li>Secrets from Vault at <a href="https://vault.local">https://vault.local</a></li>
+    </ul>
+  </main>
+</div>
+<footer class="text-center p-3 mt-auto bg-dark text-light">© 2025 Temitayo Charles Akinniranye</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+function toggleTheme() {
+  document.body.classList.toggle("bg-dark");
+  document.body.classList.toggle("text-light");
+}
+</script>
+</body>
+</html>
