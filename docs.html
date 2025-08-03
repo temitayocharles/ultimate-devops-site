@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Docs — Ultimate DevOps Container</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #0f172a;
+      color: #f8fafc;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    h1 {
+      color: #f472b6;
+    }
+    .section {
+      padding: 3rem 1.5rem;
+    }
+    .doc-block {
+      background: #1e293b;
+      border-left: 5px solid #ec4899;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+    }
+    a {
+      color: #f472b6;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container section">
+    <h1>Documentation</h1>
+
+    <div class="doc-block">
+      <h4>🚀 Getting Started</h4>
+      <p>Clone the GitHub repo and run:</p>
+      <code>docker compose up -d</code>
+      <p>Access services via:</p>
+      <ul>
+        <li><code>https://code.local</code></li>
+        <li><code>https://grafana.local</code></li>
+        <li><code>https://vault.local</code></li>
+      </ul>
+    </div>
+
+    <div class="doc-block">
+      <h4>🔐 TLS Setup (Self-Signed)</h4>
+      <p>Using <strong>mkcert</strong> and NGINX reverse proxy, all *.local domains are secured. No setup needed—just run and access.</p>
+    </div>
+
+    <div class="doc-block">
+      <h4>📂 Persisting Volumes</h4>
+      <p>Mount your external volume to <code>/data</code> or <code>/vault-backup</code>. Example:</p>
+      <code>-v /Volumes/256-B:/vault-backup</code>
+    </div>
+
+    <div class="doc-block">
+      <h4>📎 CLI Tools Installed</h4>
+      <ul>
+        <li>Docker, Compose, AWS CLI</li>
+        <li>Terraform, kubectl, Helm</li>
+        <li>Trivy, Checkov, SOPS</li>
+        <li>Vault CLI, glab, yq, jq, stern</li>
+      </ul>
+    </div>
+
+    <p class="mt-4">
+      ➡️ <a href="ci.html">Next: CI/CD</a>
+    </p>
+  </div>
+</body>
+</html>
