@@ -1,59 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Features - Ultimate DevOps</title>
+  <meta charset="UTF-8" />
+  <title>Features | Ultimate DevOps Container</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>body { display: flex; flex-direction: column; min-height: 100vh; } main { padding: 20px; flex: 1; }</style>
+  <style>
+    body {
+      background: linear-gradient(to right, #0f172a, #1e293b);
+      color: #f1f5f9;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .container {
+      padding: 4rem 2rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #38bdf8;
+      margin-bottom: 2rem;
+    }
+    .feature-list li {
+      margin-bottom: 1rem;
+      font-size: 1.15rem;
+      background: #1e293b;
+      padding: 1rem;
+      border-left: 4px solid #22d3ee;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
+    }
+    .badge {
+      background-color: #0ea5e9;
+      font-size: 0.9rem;
+      margin-left: 0.5rem;
+    }
+  </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">Ultimate DevOps</a>
-    <button class="btn btn-outline-light ms-auto" onclick="toggleTheme()">🌙</button>
-  </div>
-</nav>
-<div class="d-flex">
-  <div class="bg-light p-3" style="width: 250px; height: 100vh;">
-    <h5>Navigation</h5>
-    <ul class="nav flex-column">
-      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-      <li class="nav-item"><a class="nav-link" href="architecture.html">Architecture</a></li>
-      <li class="nav-item"><a class="nav-link" href="use-cases.html">Use Cases</a></li>
-      <li class="nav-item"><a class="nav-link" href="problem-solved.html">Problem Solved</a></li>
-      <li class="nav-item"><a class="nav-link active" href="features.html">Features</a></li>
-      <li class="nav-item"><a class="nav-link" href="getting-started.html">Getting Started</a></li>
-      <li class="nav-item"><a class="nav-link" href="components.html">Components</a></li>
-      <li class="nav-item"><a class="nav-link" href="security.html">Security</a></li>
-      <li class="nav-item"><a class="nav-link" href="ci-cd.html">CI/CD</a></li>
-      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-  <main class="flex-grow-1">
-    <h1>Key Features</h1>
-    <ul>
-      <li>🌐 <strong>Reverse Proxy:</strong> HTTPS for all services via NGINX + mkcert</li>
-      <li>📊 <strong>Monitoring:</strong> Prometheus + Grafana with preconfigured dashboards</li>
-      <li>🔐 <strong>Secrets Management:</strong> Vault integration, agent auto-injection</li>
-      <li>🛡 <strong>Security Tools:</strong> Trivy (containers), Checkov (IaC)</li>
-      <li>💻 <strong>Remote Dev:</strong> Code-server, Powerlevel10k, Zsh, Git, AWS CLI</li>
-      <li>⚙️ <strong>CI/CD Ready:</strong> Build → Scan → Push → Deploy GitHub Actions</li>
-    </ul>
-    <p>
-      The goal is zero-touch, self-documenting, production-mimicking DevOps lab infrastructure.
-    </p>
-  </main>
+
+<div class="container">
+  <h1>Key Features</h1>
+  <ul class="feature-list list-unstyled">
+    <li>
+      💻 <strong>Fully Loaded Development Stack</strong>
+      <span class="badge">Docker</span> <span class="badge">Terraform</span>
+      <span class="badge">Trivy</span> <span class="badge">Checkov</span>
+      <span class="badge">SOPS</span>
+    </li>
+    <li>
+      🔐 <strong>Enterprise-Grade Security</strong> - TLS, mkcert integration, hardened base image, privilege restrictions, Docker socket protection
+    </li>
+    <li>
+      ⚙️ <strong>Auto-Provisioned Monitoring</strong> - Prometheus + Grafana dashboards with container metrics out of the box
+    </li>
+    <li>
+      🧠 <strong>Interactive Terminal</strong> - ZSH + Powerlevel10k + Git-aware prompt, custom aliases, syntax highlighting
+    </li>
+    <li>
+      💾 <strong>External Volume Mounting</strong> - Seamlessly attach external SSDs for persistent configuration and dev files
+    </li>
+    <li>
+      🧩 <strong>Pre-Installed Tools</strong> - GitHub CLI, AWS CLI, Vault CLI, Helm, kubectl, stern, promtool, code-server, etc.
+    </li>
+    <li>
+      🧰 <strong>Modular Design</strong> - Add or remove components based on use-case (CI/CD, secure browsing, scanning)
+    </li>
+  </ul>
 </div>
-<footer class="text-center p-3 mt-auto bg-dark text-light">
-  © 2025 Temitayo Charles Akinniranye
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  function toggleTheme() {
-    document.body.classList.toggle("bg-dark");
-    document.body.classList.toggle("text-light");
-  }
-</script>
+
 </body>
 </html>
