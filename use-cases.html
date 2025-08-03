@@ -2,103 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Use Cases | Ultimate DevOps Container</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Use Cases — Ultimate DevOps Container</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
     body {
-      background-color: #090c17;
-      color: #e5e7eb;
+      background: #0f172a;
+      color: #f1f5f9;
       font-family: 'Segoe UI', sans-serif;
     }
-    .container {
+    h1, h2 {
+      color: #60a5fa;
+    }
+    .section {
       padding: 3rem 2rem;
     }
-    h1 {
-      font-size: 2.5rem;
-      color: #22d3ee;
-      margin-bottom: 1rem;
-    }
-    .card {
-      background: #1e293b;
-      border: none;
-      border-left: 4px solid #0ea5e9;
+    .case {
       margin-bottom: 2rem;
-      box-shadow: 0 0 10px rgba(14, 165, 233, 0.4);
+      background: #1e293b;
+      border-left: 4px solid #3b82f6;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(59, 130, 246, 0.1);
     }
-    .card-title {
-      font-size: 1.5rem;
-      color: #e0f2fe;
+    a {
+      color: #93c5fd;
     }
-    .card-text {
-      color: #cbd5e1;
-    }
-    .badge {
-      background-color: #38bdf8;
-    }
-    .section-header {
-      margin-top: 3rem;
-      color: #7dd3fc;
+    a:hover {
+      color: #bfdbfe;
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
+  <div class="container section">
+    <h1>Real-World Use Cases</h1>
 
-<div class="container">
-  <h1>Real-World Use Cases</h1>
-  <p class="lead">
-    This isn’t just a demo. It’s a mission-critical workstation that works for developers, teams, and entire organizations.
-  </p>
+    <div class="case">
+      <h2>🔥 Onboarding New Engineers Instantly</h2>
+      <p>
+        No more "it works on my machine." Share the container and get new engineers up and running in seconds. All tools, configs, and aliases are baked in.
+      </p>
+    </div>
 
-  <div class="card p-4">
-    <h5 class="card-title">🚀 Fresh Laptop? Instant Setup</h5>
-    <p class="card-text">
-      You’ve just bought a new Mac or PC. Instead of spending hours downloading VS Code, Docker, Terraform, Git, AWS CLI, Helm, Vault, SOPS, and more—you pull a single container. Everything’s in.
+    <div class="case">
+      <h2>🧪 Isolated CI/CD Testing Environment</h2>
+      <p>
+        Use it in your CI pipeline to replicate your production toolchain inside GitHub Actions, Forgejo, Jenkins, or Drone.
+      </p>
+    </div>
+
+    <div class="case">
+      <h2>📦 Infrastructure Workshops & DevOps Bootcamps</h2>
+      <p>
+        Teaching Terraform? AWS CLI? Helm? This container ensures everyone has the same environment. Just run it. Everything works.
+      </p>
+    </div>
+
+    <div class="case">
+      <h2>🧳 Remote Work & Portable Productivity</h2>
+      <p>
+        Plug in your volume. Boot the container. No matter what system you’re on — Linux, Mac, Windows — your stack remains the same.
+      </p>
+    </div>
+
+    <div class="case">
+      <h2>🖥️ Secure On-Demand Developer Workstation</h2>
+      <p>
+        Run a fully-featured DevOps IDE (code-server) in the browser with TLS, Prometheus/Grafana dashboards, and terminal access.
+      </p>
+    </div>
+
+    <p class="mt-4">
+      ➡️ <a href="problems-it-solves.html">Next: Problems It Solves</a>
     </p>
-    <span class="badge">DevOps</span>
-    <span class="badge">Software Engineers</span>
-    <span class="badge">Bootcamp Grads</span>
   </div>
-
-  <div class="card p-4">
-    <h5 class="card-title">🏕️ Air-Gapped & Disaster Recovery Environments</h5>
-    <p class="card-text">
-      Working offline? Inside a government-regulated network? No problem. This container is prebuilt and hardened for local-only work—with mounted volumes to persist your code and configs.
-    </p>
-    <span class="badge">Gov & Military</span>
-    <span class="badge">Offline Labs</span>
-    <span class="badge">Disaster Recovery</span>
-  </div>
-
-  <div class="card p-4">
-    <h5 class="card-title">📊 Teaching, Demos & Workshops</h5>
-    <p class="card-text">
-      Running a DevOps workshop or bootcamp? Just ask your attendees to pull the image. Everyone is now on the same page—no more “it works on my laptop” or troubleshooting installations mid-class.
-    </p>
-    <span class="badge">Educators</span>
-    <span class="badge">Meetups</span>
-    <span class="badge">Hackathons</span>
-  </div>
-
-  <div class="card p-4">
-    <h5 class="card-title">💼 Enterprise Hardening & Policy Enforcement</h5>
-    <p class="card-text">
-      Need to enforce tools, versions, security policies, logging, and monitoring standards across a team? This container is designed for just that. Update the image once—every engineer receives the hardened stack.
-    </p>
-    <span class="badge">CISOs</span>
-    <span class="badge">Team Leads</span>
-    <span class="badge">Platform Engineers</span>
-  </div>
-
-  <h3 class="section-header">And There's More...</h3>
-  <p>
-    - Rapid proof-of-concept environments<br>
-    - Secure, containerized CI/CD agents<br>
-    - Failover developer VMs on EC2<br>
-    - Portable labs for cert exams (CKA, Terraform, AWS, etc.)<br>
-  </p>
-
-</div>
-
 </body>
 </html>
