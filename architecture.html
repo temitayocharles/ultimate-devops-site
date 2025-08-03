@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Architecture | Ultimate DevOps Container</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
-      background-color: #0c0c1d;
+      background: #0f172a;
       color: #e2e8f0;
       font-family: 'Segoe UI', sans-serif;
     }
@@ -15,71 +15,55 @@
       padding: 3rem 2rem;
     }
     h1 {
-      font-size: 2.5rem;
       color: #38bdf8;
       margin-bottom: 2rem;
     }
-    .img-fluid {
-      border: 2px solid #334155;
-      border-radius: 8px;
-      box-shadow: 0 0 30px rgba(59,130,246,0.4);
+    img {
+      width: 100%;
+      max-width: 960px;
+      border: 2px solid #475569;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+      box-shadow: 0 0 15px rgba(59, 130, 246, 0.2);
     }
-    .diagram-section {
-      margin-top: 3rem;
+    .text-highlight {
+      color: #7dd3fc;
+      font-weight: 500;
     }
-    .quote {
-      font-style: italic;
-      color: #94a3b8;
-      border-left: 4px solid #38bdf8;
-      padding-left: 1rem;
-      margin-top: 1.5rem;
+    p {
+      font-size: 1.1rem;
     }
-    .link {
-      color: #60a5fa;
-      text-decoration: underline;
-    }
-    .link:hover {
-      color: #3b82f6;
+    ul li {
+      margin-bottom: 1rem;
     }
   </style>
 </head>
 <body>
 
 <div class="container">
-  <h1>Architecture: Simplicity Meets Power</h1>
-
+  <h1>System Architecture</h1>
   <p>
-    The architecture behind the Ultimate DevOps Container is designed to balance power, portability, and security—without requiring you to babysit your environment.
+    The <span class="text-highlight">Ultimate DevOps Container</span> is built on a secure, modular foundation.
+    Every component is optimized for performance, portability, and scalability.
   </p>
 
-  <div class="diagram-section text-center">
-    <img src="images/devops-architecture-diagram.png" alt="Container Architecture" class="img-fluid w-75 mb-3">
-    <p class="text-muted">A fully isolated, fully portable DevOps workstation</p>
-  </div>
+  <img src="images/devops-architecture-diagram.png" alt="Architecture Diagram">
 
   <p>
-    Your container runs as an orchestrated stack:
+    From boot to productivity in <strong>under 30 seconds</strong>, this container includes:
   </p>
 
   <ul>
-    <li><strong>Base OS:</strong> Debian Slim (optimized and hardened)</li>
-    <li><strong>CLI Stack:</strong> Terraform, Trivy, Vault CLI, AWS CLI, Helm, GitHub CLI</li>
-    <li><strong>Terminal UX:</strong> Oh My Zsh, Powerlevel10k, custom aliases</li>
-    <li><strong>Browser IDE:</strong> Code-Server with TLS reverse proxy</li>
-    <li><strong>Monitoring:</strong> Prometheus & Grafana pre-integrated</li>
-    <li><strong>Security:</strong> TLS with mkcert, SOPS, Checkov, Trivy vulnerability scanner</li>
+    <li><strong>Dockerfile Base:</strong> Hardened debian-slim with custom user (non-root)</li>
+    <li><strong>Tooling Layer:</strong> Terraform, Trivy, Checkov, Git, Vault, Helm, SOPS, kubectl, code-server</li>
+    <li><strong>UI & Security:</strong> TLS via mkcert, reverse proxy NGINX, encrypted ZSH with P10K</li>
+    <li><strong>Monitoring Stack:</strong> Prometheus + Grafana preconfigured with scrape configs</li>
+    <li><strong>Persistence & Volume Support:</strong> Mount external USB/SSD into `/Volumes/256-B`</li>
+    <li><strong>CI/CD Ready:</strong> Forgejo/GitHub workflows prebuilt for Docker image push</li>
   </ul>
 
-  <div class="quote">
-    “Imagine shipping your DevOps lab in a suitcase… that’s what this container is.”
-  </div>
-
-  <p>
-    The architecture promotes reproducibility and resilience. Need to spin this up on a new laptop? Just run one command. Your team travels or works across air-gapped environments? Just pull the image and mount your volume. No mess. No reconfiguration.
-  </p>
-
-  <p>
-    View more on <a href="features.html" class="link">key features</a> or <a href="use-cases.html" class="link">see how it’s being used today</a>.
+  <p class="mt-4">
+    Whether you're building microservices or teaching DevOps, this container is ready to go.
   </p>
 </div>
 
