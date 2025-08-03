@@ -2,49 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Gallery — Ultimate DevOps Container</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <style>
-    body {
-      background-color: #0f172a;
-      color: #f1f5f9;
-      font-family: 'Segoe UI', sans-serif;
-    }
-    h1 {
-      color: #5eead4;
-    }
-    .section {
-      padding: 3rem 1.5rem;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 0 12px rgba(94, 234, 212, 0.3);
-      border: 2px solid #134e4a;
-    }
-  </style>
+  <title>Gallery • Ultimate DevOps</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container section">
-    <h1>Gallery</h1>
-    <p>Explore the visual essence of what the Ultimate DevOps Container brings to your workflow.</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+  </nav>
+  <div class="main">
+    <h1>Visual Gallery</h1>
+    <p>A glimpse into the aesthetics and power of the Ultimate DevOps Container:</p>
     <div class="gallery">
-      <img src="images/setup.png" alt="Initial DevOps setup UI">
-      <img src="images/architecture.png" alt="Container Architecture">
-      <img src="images/container-running.png" alt="DevOps container running services">
-      <img src="images/dashboard.png" alt="Auto-provisioned Grafana dashboard">
-      <img src="images/reverse-proxy.png" alt="TLS reverse proxy structure">
+      <img src="images/terminal-tools.png" alt="Terminal Tools" />
+      <img src="images/grafana-dashboard.png" alt="Grafana Dashboard" />
+      <img src="images/code-server.png" alt="Code Server Interface" />
+      <img src="images/network-view.png" alt="Docker Network View" />
     </div>
-    <p class="mt-4">
-      ➡️ <a href="docs.html">Next: Documentation</a>
-    </p>
   </div>
 </body>
 </html>
