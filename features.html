@@ -2,70 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Features | Ultimate DevOps Container</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      background: linear-gradient(to right, #0f172a, #1e293b);
-      color: #f1f5f9;
-      font-family: 'Segoe UI', sans-serif;
-    }
-    .container {
-      padding: 4rem 2rem;
-    }
-    h1 {
-      font-size: 2.5rem;
-      color: #38bdf8;
-      margin-bottom: 2rem;
-    }
-    .feature-list li {
-      margin-bottom: 1rem;
-      font-size: 1.15rem;
-      background: #1e293b;
-      padding: 1rem;
-      border-left: 4px solid #22d3ee;
-      border-radius: 6px;
-      box-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
-    }
-    .badge {
-      background-color: #0ea5e9;
-      font-size: 0.9rem;
-      margin-left: 0.5rem;
-    }
-  </style>
+  <title>Features • Ultimate DevOps</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-<div class="container">
-  <h1>Key Features</h1>
-  <ul class="feature-list list-unstyled">
-    <li>
-      💻 <strong>Fully Loaded Development Stack</strong>
-      <span class="badge">Docker</span> <span class="badge">Terraform</span>
-      <span class="badge">Trivy</span> <span class="badge">Checkov</span>
-      <span class="badge">SOPS</span>
-    </li>
-    <li>
-      🔐 <strong>Enterprise-Grade Security</strong> - TLS, mkcert integration, hardened base image, privilege restrictions, Docker socket protection
-    </li>
-    <li>
-      ⚙️ <strong>Auto-Provisioned Monitoring</strong> - Prometheus + Grafana dashboards with container metrics out of the box
-    </li>
-    <li>
-      🧠 <strong>Interactive Terminal</strong> - ZSH + Powerlevel10k + Git-aware prompt, custom aliases, syntax highlighting
-    </li>
-    <li>
-      💾 <strong>External Volume Mounting</strong> - Seamlessly attach external SSDs for persistent configuration and dev files
-    </li>
-    <li>
-      🧩 <strong>Pre-Installed Tools</strong> - GitHub CLI, AWS CLI, Vault CLI, Helm, kubectl, stern, promtool, code-server, etc.
-    </li>
-    <li>
-      🧰 <strong>Modular Design</strong> - Add or remove components based on use-case (CI/CD, secure browsing, scanning)
-    </li>
-  </ul>
-</div>
-
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="features.html">Features</a>
+    <a href="security.html">Security</a>
+    <a href="components.html">Components</a>
+  </nav>
+  <div class="main">
+    <h1>Key Features</h1>
+    <ul>
+      <li><strong>🔥 Multi-Architecture:</strong> Works on Mac M1/M2, Intel, and Linux hosts</li>
+      <li><strong>⚡ Fast Start:</strong> Spin up a ready-to-code DevOps workstation in under 30 seconds</li>
+      <li><strong>🔐 TLS by Default:</strong> Self-signed HTTPS for `.local` domains</li>
+      <li><strong>📦 Pre-installed Toolchain:</strong> Docker, Git, Terraform, AWS CLI, Trivy, Helm, Prometheus, Grafana, Vault</li>
+      <li><strong>🧠 Intelligent Design:</strong> Scripts, aliases, dashboards, and plugins preloaded</li>
+      <li><strong>🎯 CI/CD Ready:</strong> Plug into Forgejo, GitHub Actions, or Jenkins instantly</li>
+      <li><strong>💾 Volume Support:</strong> Persistent storage with `/mnt/data` for backups</li>
+    </ul>
+  </div>
 </body>
 </html>
